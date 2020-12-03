@@ -34,7 +34,7 @@ To use with docker:
 ### Build image
 
 ```bash
-docker build -t minimalmlnetwebapi:latest -f Dockerfile .
+docker build -t minimalmlnetwebapi:latest -f WebApi/Dockerfile .
 ```
 
 ### Run app from image
