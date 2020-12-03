@@ -26,3 +26,19 @@ To use it, run the application and make an HTTP `POST` request to `http(s)//loca
   "Score": 0
 }
 ```
+
+## Docker
+
+To use with docker:
+
+### Build image
+
+```bash
+docker build -t minimalmlnetwebapi:latest -f Dockerfile .
+```
+
+### Run app from image
+
+```bash
+docker run --rm -d  -p 5000:80/tcp minimalmlnetwebapi:latest
+```
