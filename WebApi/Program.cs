@@ -46,9 +46,7 @@ namespace WebApi
             var prediction = predEngine.Predict(input);
                 
             // Return prediction as response
-            var response = JsonSerializer.Serialize<Sentiment.Output>(prediction);
-            http.Response.ContentType = "application/json";
-            await http.Response.WriteAsync(response);
+            await http.Response.WriteAsJsonAsync(prediction);
         }
     }
 }
